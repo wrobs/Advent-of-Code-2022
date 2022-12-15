@@ -1,12 +1,12 @@
-#import os.path
-#
-#this_folder = os.path.dirname(__file__) + '\\'
-#input_filename = 'input08.txt'
-#    # update file name above
-#input_file_path = this_folder + input_filename
+import os.path
+
+this_folder = os.path.dirname(__file__) + '\\'
+input_filename = 'input08.txt'
+    # update file name above
+input_file_path = this_folder + input_filename
 
     #prep input in memory
-with open('input08.txt', "r") as infile:
+with open(input_file_path, "r") as infile:
     lines = [s.replace('\n', '') for s in infile.readlines()]
     
 # PROBLEM START ########################################
